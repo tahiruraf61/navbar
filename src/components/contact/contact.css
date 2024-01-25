@@ -1,0 +1,8 @@
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 60rem;
+    font-size: 3rem;
+    margin-top: 8rem;
+}

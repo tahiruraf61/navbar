@@ -1,0 +1,111 @@
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 100;
+    height: 5rem;
+    width: 100vw;
+    margin: 0 auto;
+    max-width: 70rem;
+    padding: 1rem 2rem;
+    background-color: rgb(30, 30, 30);
+
+}
+
+.nav-link{
+    margin:2rem;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+
+.nav-link:hover{
+    color: yellow;
+    border-bottom: solid 0.3rem yellow;
+    padding-bottom: 0.5rem;
+}
+
+
+.logo{
+    object-fit: cover;
+    height: 3rem;
+    width: 4rem;
+}
+
+.searchBar{
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 2rem;
+    padding: 0 1rem;
+    border-radius: 0.5rem;
+}
+
+.searchInput{
+    border: none;
+    height: 2rem;
+    outline: none;
+    max-width: 7rem;
+    padding: 1rem;
+
+}
+
+.searchIcon{
+    object-fit: cover;
+    height: 1rem;
+    width: 1rem;
+    padding: 0.5rem 0;
+
+}
+
+.mobNav{
+    display: none;
+    margin-right: 2.5rem;
+}
+
+.mobMenuImg{
+    object-fit: cover;
+    height: 2rem;
+    width: 3rem;
+}
+
+.mobNav-links{
+    background: rgb(50, 50, 50);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 5rem;
+    right: 5rem;
+    padding: 1.5rem 2.5rem;
+}
+
+.mobNav-link{
+    margin: 0.5rem 0;
+    color: white;
+    text-decoration: none;
+}
+
+.mobNav-link:hover{
+    color: yellow;
+    border-bottom: solid 0.2rem yellow;
+    padding-bottom: 0.5rem;
+}
+
+@media only screen and (max-width:767px) {
+    .mobNav{
+        display: flex;
+    }
+    .nav-links{
+        display: none;
+    }
+    .searchBar{
+        display: none;
+    }
+}
